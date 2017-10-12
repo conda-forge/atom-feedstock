@@ -26,7 +26,6 @@ test:
   imports:
     - atom
     - atom.datastructures
-    - tests
 
 about:
   home: https://github.com/nucleic/atom
