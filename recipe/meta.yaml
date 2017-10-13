@@ -1,4 +1,4 @@
-{% set version = "0.3.9" %}
+{% set version = "0.4.0" %}
 package:
   name: atom
   version: {{ version }}
@@ -6,26 +6,25 @@ package:
 source:
   url: https://github.com/nucleic/atom/archive/{{ version }}.tar.gz
   fn: atom-{{ version }}.tar.gz
-  sha256: 10d797874a5bf4467804343a3e42ada4b0ce6c09cc76ae3997aeed66cb781dc5
+  sha256: 0ad1c86c9d3cbca8489b386287ba2274591bff818a2944ffae8ed1af420e29ee
 
 build:
   number: 0
-  skip: True  # [py3k]
-  script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
   build:
     - python
     - setuptools
+    - future
 
   run:
     - python
+    - future
 
 test:
   imports:
     - atom
     - atom.datastructures
-    - tests
 
 about:
   home: https://github.com/nucleic/atom
