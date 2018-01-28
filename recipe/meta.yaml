@@ -1,12 +1,14 @@
-{% set version = "0.4.0" %}
+{% set name = "atom" %}
+{% set version = "0.4.1" %}
+{% set sha256 = "bbca07d519defbf0d6066a725285a9b30cb8bbf7c880f602f062b83189929f2b" %}
 package:
-  name: atom
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/nucleic/atom/archive/{{ version }}.tar.gz
-  fn: atom-{{ version }}.tar.gz
-  sha256: 0ad1c86c9d3cbca8489b386287ba2274591bff818a2944ffae8ed1af420e29ee
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
 
 build:
   number: 0
