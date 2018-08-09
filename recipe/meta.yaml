@@ -15,7 +15,8 @@ build:
 
 requirements:
   build:
-    - { compiler('cxx') }
+    - {{ compiler('cxx') }}
+    - pip
   host:
     - python
     - future
