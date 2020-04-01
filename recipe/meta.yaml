@@ -1,6 +1,6 @@
 {% set name = "atom" %}
-{% set version = "0.4.3" %}
-{% set sha256 = "ce96fb50326a3bfa084463dbde1cf2e02c92735e5bc324d836355c25af87e0ae" %}
+{% set version = "0.5.0" %}
+{% set sha256 = "3f4dd1108be206d28eda23637a473561dea69a3d21d2896ed0594b88b302a482" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -32,6 +32,7 @@ test:
 about:
   home: https://github.com/nucleic/atom
   license: BSD 3-Clause
+  license_file: LICENSE
   summary: Memory efficient Python objects
 
 extra:
