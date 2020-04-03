@@ -32,7 +32,7 @@ test:
 
 about:
   home: https://github.com/nucleic/atom
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: Memory efficient Python objects
 
