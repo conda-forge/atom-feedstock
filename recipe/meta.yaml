@@ -16,11 +16,11 @@ build:
 requirements:
   build:
     - {{ compiler('cxx') }}
-    - cppy
   host:
     - python
     - pip
     - setuptools
+    - cppy
   run:
     - python
     - future
