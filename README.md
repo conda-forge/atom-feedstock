@@ -5,7 +5,7 @@ Home: https://github.com/nucleic/atom
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Memory efficient Python objects
 
