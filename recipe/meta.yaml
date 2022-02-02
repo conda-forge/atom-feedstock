@@ -1,17 +1,17 @@
 {% set name = "atom" %}
-{% set version = "0.7.0" %}
-{% set sha256 = "4055fbdeeb692d3d52c6e3c628d7513fc71f147920cac7d0da05b6dbb5ec8c8d" %}
+{% set version = "0.5.2" %}
+{% set sha256 = "99b4c94b833aafffc0b34ab8f98b697f575be3230bff38ebf863d065403333e0" %}
+
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -20,7 +20,7 @@ requirements:
     - python
     - pip
     - setuptools
-    - cppy
+    - cppy >=1.1.0
   run:
     - python
 
