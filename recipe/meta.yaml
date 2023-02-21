@@ -1,6 +1,6 @@
 {% set name = "atom" %}
-{% set version = "0.8.2" %}
-{% set sha256 = "3155b7a0a286cb5c2bff2929fc2341d071dc9169b0d0ff1f15450ddd57d24c57" %}
+{% set version = "0.9.0" %}
+{% set sha256 = "eccc1ab0cc1c6d1ed5b6ecd1e768f8b8727447605bd009a2a0b49b4ee7eb963d" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py<38]
 
 requirements:
