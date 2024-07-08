@@ -1,6 +1,6 @@
 {% set name = "atom" %}
-{% set version = "0.10.4" %}
-{% set sha256 = "7e493fbcf7b58e7e991d5bdabb4b8d5ed5be2c2a36a21ca892dee8db3086a155" %}
+{% set version = "0.10.5" %}
+{% set sha256 = "f5b8d617eaed71d97c5b79a78f8f531355cf7c45b135648265bfb3964050ec8a" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -19,6 +19,7 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - pip
