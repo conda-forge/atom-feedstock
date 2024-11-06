@@ -1,6 +1,6 @@
 {% set name = "atom" %}
-{% set version = "0.10.5" %}
-{% set sha256 = "f5b8d617eaed71d97c5b79a78f8f531355cf7c45b135648265bfb3964050ec8a" %}
+{% set version = "0.11.0" %}
+{% set sha256 = "4ab93fc3cc7b6a078253b116e9f6235d2913eb9bb49adbc31a258e1017f2aee0" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
