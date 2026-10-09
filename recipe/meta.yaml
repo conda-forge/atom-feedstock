@@ -1,13 +1,13 @@
 {% set name = "atom" %}
-{% set version = "0.12.1" %}
-{% set sha256 = "2cbfb77939da28879a5432e3b201ac026be85c789c4e96de246a6f6a9f4be57a" %}
+{% set version = "0.13.0" %}
+{% set sha256 = "b7273ba41fe45c479c6dcfc0e352195b44f8fe4ba82b4e4ece9a6864b0bb0dd2" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
